@@ -5,6 +5,7 @@ before_install:
 #  - gradlew -Dcucumber.options="..." test
   - gradle assemble
   - gradle check
+  - gradle test
 
 #script:
   - gradle -Dcucumber.options="..." test
