@@ -6,7 +6,7 @@ before_install:
   - gradle test
 #  - bundle install
 
-#script:
+script:
   - gradle -Dcucumber.options="..." test
 #  - bundle exec cucumber -f progress -r features /src/test/resources/gradle/cucumber/debilitarFantasmasCuandoacmanComePellets.feature
   - bundle exec cucumber /src/test/resources/gradle/cucumber/debilitarFantasmasCuandoacmanComePellets.feature
