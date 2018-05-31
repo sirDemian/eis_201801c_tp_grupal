@@ -1,11 +1,12 @@
 language: java
 
 before_install:
-  - gradle assemble
   - gradle check
   - gradle test
 #  - bundle install
-  
+
+script: "./gradlew check && ./gradlew cucumber"
+
 notifications:
   email:
     recipients:
