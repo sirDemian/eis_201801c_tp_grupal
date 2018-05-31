@@ -1,13 +1,22 @@
 language: java
 
+#before_install:
+#  - sudo apt-get update -qq
+#  - sudo apt-get install -qq cucumber
 
+script: "bundle exec rake knapsack:cucumber"
+
+#script:
+#  - cucumber --version
+#  - bundle exec cucumber -f progress -r features /src/test/resources/gradle/cucumber/debilitarFantasmasCuandoacmanComePellets.feature
+  
 notifications:
   email:
     recipients:
-      - sirdemian@gmail.com
-      - sabaliauskaspablo@gmail.com
-      - salgadoema@gmail.com
-      - schabpaula@gmail.com
+#      - sirdemian@gmail.com
+#      - sabaliauskaspablo@gmail.com
+#      - salgadoema@gmail.com
+#      - schabpaula@gmail.com
       - gil.maricruz@gmail.com
     on_success: always # default: change
     on_failure: always # default: always
