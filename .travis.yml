@@ -1,16 +1,15 @@
 language: java
 
 before_install:
-#  - sudo apt-get install cucumber
-#  - gradlew -Dcucumber.options="..." test
   - gradle assemble
   - gradle check
   - gradle test
+  - bundle install
 
 #script:
   - gradle -Dcucumber.options="..." test
-#  - cucumber --version
 #  - bundle exec cucumber -f progress -r features /src/test/resources/gradle/cucumber/debilitarFantasmasCuandoacmanComePellets.feature
+  - bundle exec cucumber /src/test/resources/gradle/cucumber/debilitarFantasmasCuandoacmanComePellets.feature
   
 notifications:
   email:
