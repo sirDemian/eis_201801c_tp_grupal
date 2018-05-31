@@ -4,7 +4,7 @@ before_install:
   - gradle assemble
   - gradle check
   - gradle test
-  - bundle install
+#  - bundle install
 
 #script:
   - gradle -Dcucumber.options="..." test
