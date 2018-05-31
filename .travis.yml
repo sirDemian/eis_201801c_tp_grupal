@@ -2,7 +2,9 @@ language: java
 
 before_install:
 #  - sudo apt-get install cucumber
-  - gradlew -Dcucumber.options="..." test
+#  - gradlew -Dcucumber.options="..." test
+  - gradle assemble
+  - gradle check
 
 #script:
 #  - cucumber --version
